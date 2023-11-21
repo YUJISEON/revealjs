@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/dist/reveal.css">
+    <link rel="stylesheet" href="/assets/dist/theme/black.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/assets/dist/reveal.js"></script>
+    <script src="/assets/plugin/markdown/markdown.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Jump to Slide
+                1. ress G to activate
+                2. Type a slide number or id
+                3. Press Enter to confirm
+            -->
+            <!--
+                Touch Navigation
+            -->
+            <!-- Fullscreen mode
+                Press »F« on your keyboard to view your presentation in fullscreen mode. 
+                Once in fullscreen mode, press the »ESC« key to exit.
+            -->
+            <section data-background-image="http://example.com/image.png" 
+                    data-background-size="100px" data-background-repeat="repeat">
+                <h2>This background image will be sized to 100px and repeated</h2>
+            </section>
+            <section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" 
+                    data-background-video-loop data-background-video-muted>
+                <div data-id="box" style="display: inline-block; padding: 30px; background: salmon;">
+                    <h2>Video</h2>
+                </div>                
+            </section>
+            <section data-background-iframe="https://www.sanggong.kr/cmall/"
+                    data-background-interactive>
+                <div data-id="box" style="display: inline-block; padding: 30px; background: salmon;">
+                    <h2>Iframe</h2>
+                </div> 
+            </section>
+            <section data-auto-animate>
+                <div data-id="box" style="height: 50px; background: salmon;"></div>
+            </section>
+            <section data-auto-animate>
+                <div data-id="box" style="height: 400px; background: blue;"></div>
+            </section>
+            <section data-auto-animate>
+                <ul>
+                    <li>Mercury</li>
+                    <li>Jupiter</li>
+                    <li>Mars</li>
+                </ul>
+            </section>
+            <section data-auto-animate>
+                <ul>
+                    <li>Mercury</li>
+                    <li>Earth</li>
+                    <li>Jupiter</li>
+                    <li>Saturn</li>
+                    <li>Mars</li>
+                </ul>
+            </section>
+            <section>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="https://placekitten.com/450/300" width="450" height="300">
+                    <img class="fragment current-visible" data-fragment-index="0" src="https://placekitten.com/300/450" width="300" height="450">
+                    <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+                </div>
+            </section>
+            <section data-transition="zoom-in">
+                <h2 class="r-fit-text">FIT TEXT</h2>
+                <h2 class="r-fit-text">CAN BE USED FOR MULTIPLE HEADLINES</h2>
+            </section>
+            <section>
+                <a href="#/2">Go to 2nd slide</a> <br>
+                <a href="#/7/1">Go to the 2nd vertical slide inside of the 3rd slide</a>
+            </section>
+            <section>
+                <button class="navigate-left">Left</button>
+                <button class="navigate-right">Right</button>
+                <button class="navigate-up">Up</button>
+                <button class="navigate-down">Down</button>
+                <!-- Previous vertical OR horizontal slide -->
+                <button class="navigate-prev">Prev</button>
+                <!-- Next vertical OR horizontal slide -->
+                <button class="navigate-next">Next</button>
+            </section>
+            <section>
+                <a href="#/grand-finale">Go to the last slide</a>
+            </section>            
+            <section>
+                <p class="fragment">Fade in</p>
+                <p class="fragment fade-out">Fade out</p>
+                <p class="fragment highlight-red">Highlight red</p>
+                <p class="fragment fade-in-then-out">Fade in, then out</p>
+                <p class="fragment fade-up">Slide up while fading in</p>
+            </section>
+            <section>
+                <p class="fragment custom blur">One</p>
+                <p class="fragment custom blur">Two</p>
+                <p class="fragment custom blur">Three</p>
+            </section>
+            <section id="grand-finale">
+                <h2>The end</h2>
+                <a href="#/0">Back to the first</a>
+            </section>
+            <section>Horizontal Slide</section>
+            <section>
+                <section>Vertical Slide 1</section>
+                <section>Vertical Slide 2</section>
+            </section>
+            <section data-state="make-it-pop">Horizontal Slide</section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Slide 1
+                    A paragraph with some text and a [link](https://hakim.se).
+                    ---
+                    ## Slide 2
+                    ---
+                    ## Slide 3
+                </textarea>
+            </section>
+            <section data-markdown="example.md"
+                    data-separator="^\n\n\n"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                    data-charset="iso-8859-15">
+                <!--
+                    Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+                    For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+                -->
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    - Item 1 <!-- .element: class="fragment" data-fragment-index="" -->
+                    - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                <!-- .slide: data-background="#ff0000" -->
+                    Markdown content
+                </script>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ```js [1-2|3|4]
+                    let a = 1;
+                    let b = 2;
+                    let c = x => 1 + 2 + x;
+                    c(3);
+                    ```
+                </textarea>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>

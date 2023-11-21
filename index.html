@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/dist/reveal.css">
+    <link rel="stylesheet" href="/assets/dist/theme/black.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/assets/dist/reveal.js"></script>
+    <script src="/assets/plugin/markdown/markdown.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <h2>Auto-Animate</h2>
+                <p>Automatically animate matching elements across slides with</p>
+                <div class="r-hstack justify-center">
+                    <div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                    <div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                    <div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                </div>
+            </section>
+            <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <div class="r-hstack justify-center">
+                    <div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;" ></div>
+                    <div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;" ></div>
+                    <div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;" ></div>
+                </div>
+                <h2>Auto-Animate</h2>
+            </section>
+            <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+                <div class="r-stack">
+                    <div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+                    <div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+                    <div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+                </div>
+                <h2 style="margin-top: 20px;">Auto-Animate</h2>
+            </section>
+            <section data-transition="zoom-in">
+                <h2 class="r-fit-text">FIT TEXT</h2>
+                <h2 class="r-fit-text fragment">CAN BE USED FOR MULTIPLE HEADLINES</h2>
+            </section>
+            <section>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="https://placekitten.com/450/300" width="450" height="300">
+                    <img class="fragment current-visible" data-fragment-index="0" src="https://placekitten.com/300/450" width="300" height="450">
+                    <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
